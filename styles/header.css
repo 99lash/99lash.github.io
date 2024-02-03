@@ -1,5 +1,5 @@
-header{
-  border: 1px solid red;
+header {
+  /* border: 1px solid red; */
   position: sticky;
   top: 0;
   left: 0;
@@ -8,12 +8,12 @@ header{
   height: 100vh;
 }
 
-.h-container{
+.h-container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: normal;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   position: relative;
   top: 10%;
   left: 10px;
@@ -22,9 +22,9 @@ header{
   height: 80%;
 }
 
-.information-container{
-  border: 1px solid red;
-  padding: 10px;
+.information-container {
+  /* border: 1px solid red; */
+  padding-left: 100px;
   position: relative;
   top: 30px;
   left: 1px;
@@ -38,72 +38,78 @@ header{
 
 .information-container>a,
 .information-container>h4,
-.information-container>p{
+.information-container>p {
   text-decoration: none;
   margin-block: 0;
   /* padding-left: 30px; */
   margin-inline: 30px;
 }
 
-.information-container>a>h1{
-  border: 3px solid purple;
-  width: 300px;
+.information-container>a>h1 {
+  /* border: 3px solid purple; */
+  min-width: 200px;
+  max-width: 300px;
   text-decoration: none;
+  margin-block: 0;
 }
 
-.information-container>p{
+.information-container>p {
   margin-block: 10px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   width: 300px;
 }
 
-.nav-container{
-  border: 1px solid red;
+.nav-container {
+  /* border: 1px solid red; */
+  padding-left: 90px;
 }
 
-ul{
+ul {
   list-style-type: none;
+  /* padding: 0; */
+  /* margin: 0; */
 }
 
-li>a{
+li>a {
   text-decoration: none;
 }
 
-.text{
+.text {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.759); 
+  color: rgba(255, 255, 255, 0.759);
   transition: all 0.3s;
 }
 
-.text:hover{
+.text:hover {
   padding-left: 12px;
   color: rgb(255, 255, 255);
 }
 
-.socm-container{
-  border: 1px solid red;
+.socm-container {
+  /* border: 1px solid red; */
+  padding-left: 80px;
 }
 
-.socm-container>ul{
+.socm-container>ul {
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
 }
 
-a>i{
+a>i {
   color: rgba(255, 255, 255, 0.759);
   margin: 10px;
   font-size: 25px;
   transition: all 0.3s;
 }
 
-a>i:hover{
+a>i:hover {
   color: rgb(255, 255, 255);
   /* font-size: 40px; */
   padding-bottom: 8px;
 }
 
-a>i:active{
+a>i:active {
   opacity: .30;
 }
