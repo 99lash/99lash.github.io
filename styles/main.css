@@ -1,112 +1,140 @@
-.h-m-container{
-  border: 1px solid gold;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  /* column-gap: 200px; */
-  /* margin: 50px; */
-  /* background-color: rgb(0,26,51); */
-  /* background-color: rgba(3, 41, 79, 0.976); */
-  background-color: rgb(20, 19, 19);
-}
-
 main{
-  /* border: 1px solid red; */
-  position: sticky;
-  /* top: 0; */
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 2000px;
+  /* border: 1px solid blue; */
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
 }
-
-.m-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items:start;
-  /* border: 3px solid gray; */
-  position: relative;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding-inline: 10px;
-  height: 95%;
-}
-
-.home{
-  /* border: 3px solid green; */
-  position: relative;
-  top: 0;
-  height: 715px;
-}
+/*---------------------------*/
 
 .about-section{
   /* border: 1px solid red; */
-  width: 800px;
-  position: absolute;
-  top: 120px;
-  bottom: 20px;
+  padding-top: 70px;
+  padding-inline: 10px;
 }
 
-.fixed-section-container{
-  width: 80%;
-  margin-left: 20px;
+.about-section>.fixed-container{
+  /* border: 1px solid blue; */
+  margin: 10px 40px;
+  padding: 4px 12px;
 }
+
+/*---------------------------*/
 
 .experience-section{
   /* border: 1px solid red; */
-  width: 800px;
+  padding-top: 70px;
+  padding-inline: 10px;
+}
+
+.experience-section>.fixed-container{
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
-  align-items: start;
+  margin: 10px 40px;
+  padding: 4px 12px;
+  transition: all 0.5s;
+}
+
+.experience-section>.fixed-container:hover{
+  border-radius: 8px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  /* background-color: rgba(31, 46, 74, 0.75); */
+  background-color: rgba(64, 85, 104, 0.31);
+  margin-top: 5px;
 }
 
 .left-section-container{
   /* border: 1px solid red; */
-  margin-left: 20px;
-  margin-right: 10px;
-  margin-top: 10px;
-  min-width: 100px;
-  /* padding: 4px; */
-}
-
-.left-section-container>p{
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.60);
+  width: 400px;
+  font-size: 14px;
+  padding-top: 8.5px;
 }
 
 .right-section-container{
   /* border: 1px solid red; */
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  width: 500px;
-  /* padding-right: 10px; */
+  margin-left: 12px;
 }
 
 .right-section-container>p{
-  /* border: 1px solid red; */
-  margin-right: 10px;
+  color: rgba(193, 193, 193, 0.759);
 }
 
-.tech-skills{
+/*---------------------------*/
+.projects-section{
   /* border: 1px solid red; */
-  /* width: 490px; */
-  margin-right: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding-top: 70px;
 }
 
-.ts-container{
-  background-color: rgba(3, 41, 79, 0.976);
-  padding-inline: 10px;
-  /* padding-block: px; */
-  margin: 10px;
+.project-img{
+  border-radius: 6px;
+  margin-right: 10px;
+  object-fit: cover;
+  /* border: 1px solid white; */
+  transition: all 1s;
+}
+
+.left-container>span{
+  font-size: 12px;
+  margin-top: 50px;
+  margin-left: 4px;
+  color: rgba(255, 255, 255, 0.712);
+  transition: all 0.5s;
+}
+
+.projects-section>.fixed-container{
+  /* border: 2px solid green; */
+  padding: 10px 12px;
+  margin: 40px;
+  transition: all 0.5s;
+}
+
+.projects-section>.fixed-container:hover{
+  border-radius: 8px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  /* background-color: rgba(31, 46, 74, 0.75); */
+  background-color: rgba(64, 85, 104, 0.31);
+  margin-top: 30px;
+  .project-img{
+    /* top: -10px; */
+    height: 210px;
+    width: 400px;
+    object-fit: cover;
+  }
+  .left-container>span{
+    font-size: 16px;
+    margin-top: 8px;
+  }
+}
+
+.project-link{
   display: flex;
-  justify-content: center;
-  border-radius: 20px;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
 }
 
-.ts-container>p{
-  margin: 3px;
+.left-container{
+  display: flex;
+  flex-direction: column;
+  align-items: safe;
+}
+
+.right-container{
+  /* border: 1px solid red; */
+  font-size: 14px;
+}
+
+.right-container>p,
+.right-container>h4{
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+.right-container>p{
+  color: rgba(193, 193, 193, 0.759);
+}
+
+.right-container>h4{
+  font-size: 16px;
 }
