@@ -1,18 +1,18 @@
 main{
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
 }
 /*---------------------------*/
 
 .about-section{
-  /* border: 1px solid red; */
+  border: 1px solid red;
   padding-top: 70px;
   padding-inline: 10px;
 }
 
 .about-section>.fixed-container{
-  /* border: 1px solid blue; */
+  border: 1px solid blue;
   margin: 10px 40px;
   padding: 4px 12px;
 }
@@ -44,7 +44,7 @@ main{
 }
 
 .left-section-container{
-  /* border: 1px solid red; */
+  border: 1px solid red;
   width: 400px;
   font-size: 14px;
   padding-top: 8.5px;
@@ -61,8 +61,9 @@ main{
 
 /*---------------------------*/
 .projects-section{
-  /* border: 1px solid red; */
-  padding-top: 70px;
+  border: 1px solid red;
+  padding-top: 10px;
+  padding-inline: 10px;
 }
 
 .project-img{
@@ -96,9 +97,8 @@ main{
   background-color: rgba(64, 85, 104, 0.31);
   margin-top: 30px;
   .project-img{
-    /* top: -10px; */
-    height: 210px;
-    width: 400px;
+    height: 200px;
+    width: 250px;
     object-fit: cover;
   }
   .left-container>span{
@@ -137,4 +137,27 @@ main{
 
 .right-container>h4{
   font-size: 16px;
+}
+
+.title{
+  font-size: 18px;
+  display: none;
+}
+
+@media (max-width: 1024px){
+  .about-section{
+    padding-top: 20px;
+    padding-inline: 0px;
+    font-size: 14px;
+  }
+
+  .title{
+    z-index: 10;
+    padding-left: 50px;
+    padding-block: 30px;
+    display: block;
+    position: sticky;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.089);
+  } 
 }

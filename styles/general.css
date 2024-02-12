@@ -1,16 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root{
+  --bg-color:  rgba(0, 0, 0, 0.940);
+}
+
 *{
   font-family: Poppins, 'Segoe UI', Roboto;
   /* color: black; */
-}
-
-body{
-  margin: 0;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.942);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 h1,h4,p{
@@ -18,9 +14,20 @@ h1,h4,p{
   /* color: black; */
 }
 
-@media (max-width: 800px){
-  body{
-    grid-template-columns: 1fr;
+body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+}
+
+.main-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 1024px){
+  .main-container{
+    display: block;
+    grid-template-columns: none;
   }
-  
 }
