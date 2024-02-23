@@ -18,8 +18,8 @@
 
   --clr-primary: rgb(33, 33, 33);
   --clr-secondary: rgb(50, 50, 50);
-  --clr-accent: rgb(13, 115, 119);
-  --clr-alt-accent: rgb(20, 255, 236);
+  --clr-accent: rgb(37, 91, 199);
+  --clr-alt-accent: rgb(20, 126, 255);
   --clr-text:  rgba(254, 254, 254, 0.925);
   --clr-alt-text:  rgb(223, 223, 223);
 
@@ -50,7 +50,8 @@ li {
 
 header {
   background-color: var(--bg-color);
-  height: 10svh;
+  position: sticky;
+  top: 0;
 }
 
 .navigation {
@@ -58,6 +59,7 @@ header {
   justify-content: space-between;
   align-items: center;
   max-width: 90%;
+  height: 12svh;
   margin: 0 auto;
 }
 
@@ -119,25 +121,24 @@ header {
 
 main {
   background-color: var(--bg-altcolor);
-  height: 100dvh;
-  padding: 5rem 0;
+  height: 100%;
+
 }
 
 .about {
   width: 90%;
   margin: 0 auto;
-  border: 1px solid red;
+  padding: 8rem 0;
 }
 
 .tagline-wrapper {
-  font-size: var(--fs-800);
+  font-size: var(--fs-700);
   font-weight: var(--fw-medium);
 }
 
 .about-wrapper {
   width: 50%;
   margin: 0 auto;
-  border: 1px solid pink;
 }
 
 .tagline-wrapper {
@@ -149,7 +150,6 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid red;
 }
 
 .my-avatar {
@@ -158,12 +158,15 @@ main {
   border-radius: 60px;
   object-fit: cover;
   z-index: 1;
+  border: 2px solid var(--bg-alt-accent);
+  border-style: double;
 }
 
 .my-logo-wrapper {
   width: 120px;
   height: 120px;
-  border-radius: 60px;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
   background-color: var(--bg-accent);
   display: flex;
   justify-content: center;
@@ -180,4 +183,57 @@ main {
   font-weight: var(--fw-regular);
   text-align: center;
   padding: 2rem 0;
+}
+
+
+.experience {
+  padding: 8rem 0;
+}
+
+.experience-wrapper {
+  display: grid;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  row-gap: 4rem;
+}
+
+.row-1 {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.row-wrapper1 h1 {
+  font-size: var(--fs-700);
+  font-weight: var(--fw-medium);
+}
+
+.row-2 {
+  text-align: center;
+  font-size: var(--fs-600);
+  font-weight: var(--fw-lighthin);
+  width: 60%;
+  margin: 0 auto;
+}
+
+.skills-wrapper img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  filter: contrast(100%) grayscale(80%);
+  transition: all 0.3s ease;
+}
+
+.skills-wrapper img:hover {
+  filter: none;
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content:  center;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: 4rem auto;
+  gap: 2rem;
 }
