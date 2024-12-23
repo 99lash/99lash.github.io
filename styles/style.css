@@ -31,7 +31,10 @@
   --bg-alt-accent: var(--clr-alt-accent);
   --ff-color: var(--clr-text);
   --ff-alt-color: var(--clr-alt-text);
+}
 
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -85,7 +88,8 @@ header {
 }
 
 .right-section {
-  max-width: 25rem;
+  /* border: 1px solid red; */
+  max-width: 30rem;
   display: flex;
   align-items: center;
   column-gap: 2rem;
@@ -94,12 +98,12 @@ header {
 .right-section ul{
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  max-width: 400px;
   column-gap: 2rem;
+  /* border: 1px solid lime; */
 }
 
 .underline {
-  color: var(--ff-color);
   cursor: pointer;  
   display: inline-block;
   position: relative;
@@ -146,8 +150,9 @@ header {
   /* border: 1px solid blue; */
   position: fixed;
   bottom: 0;
+  right: 0;
   height: 30%;
-  width: 5%;
+  width: 8%;
 }
 
 .sidebar ul {
